@@ -18,7 +18,7 @@ public class ProxyConfiguration {
     @Value("${proxy.port}")
     private int port;
 
-/*    @Autowired
+    @Autowired
     private SoapMessageFiltersSourceAdapter filtersSourceAdapter;
     @Bean
     public HttpProxyServer proxyServer() {
@@ -27,7 +27,7 @@ public class ProxyConfiguration {
                 .withPort(port)
                 .withFiltersSource(filtersSourceAdapter)
                 .start();
-    }*/
+    }
 
 
     @ConditionalOnProperty(name = "server.port")
