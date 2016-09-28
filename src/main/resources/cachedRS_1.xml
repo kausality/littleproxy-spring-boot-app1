@@ -1,0 +1,13 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetGeoIPResponse xmlns="http://www.webservicex.net/">
+         <GetGeoIPResult>
+            <ReturnCode>1</ReturnCode>
+            <IP>1.1.1.1</IP>
+            <ReturnCodeDetails>Success</ReturnCodeDetails>
+            <CountryName>cached Canada</CountryName>
+            <CountryCode>CU</CountryCode>
+         </GetGeoIPResult>
+      </GetGeoIPResponse>
+   </soap:Body>
+</soap:Envelope>
