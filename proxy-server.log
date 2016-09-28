@@ -8420,3 +8420,117 @@ Unconditional classes:
    </soapenv:Body>
 </soapenv:Envelope>
 2016-09-28 11:19:45.685  INFO 14624 --- [LittleProxy-0-ProxyToServerWorker-0] c.e.SoapMessageFiltersSourceAdapter      : <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetGeoIPResponse xmlns="http://www.webservicex.net/"><GetGeoIPResult><ReturnCode>1</ReturnCode><IP>1.1.1.1</IP><ReturnCodeDetails>Success</ReturnCodeDetails><CountryName>Australia</CountryName><CountryCode>AUS</CountryCode></GetGeoIPResult></GetGeoIPResponse></soap:Body></soap:Envelope>
+2016-09-28 11:21:46.611  INFO 20292 --- [main] com.example.ProxySpringBootApplication   : Starting ProxySpringBootApplication on EPUADNIW0126 with PID 20292 (D:\TestProjects\proxy-spring-boot\target\classes started by Maksym_Radiuk in D:\TestProjects\proxy-spring-boot)
+2016-09-28 11:21:46.614  INFO 20292 --- [main] com.example.ProxySpringBootApplication   : No active profile set, falling back to default profiles: default
+2016-09-28 11:21:46.717  INFO 20292 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20ce78ec: startup date [Wed Sep 28 11:21:46 MSK 2016]; root of context hierarchy
+2016-09-28 11:21:47.905  INFO 20292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4d0b26cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-28 11:21:47.946  INFO 20292 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2016-09-28 11:21:48.382  INFO 20292 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2016-09-28 11:21:48.395  INFO 20292 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-28 11:21:48.397  INFO 20292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2016-09-28 11:21:48.537  INFO 20292 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-09-28 11:21:48.537  INFO 20292 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1833 ms
+2016-09-28 11:21:48.715  INFO 20292 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-28 11:21:48.716  INFO 20292 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2016-09-28 11:21:48.720  INFO 20292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-28 11:21:48.721  INFO 20292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-28 11:21:48.721  INFO 20292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-28 11:21:48.722  INFO 20292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-28 11:21:49.013  INFO 20292 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20ce78ec: startup date [Wed Sep 28 11:21:46 MSK 2016]; root of context hierarchy
+2016-09-28 11:21:49.071  INFO 20292 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.example.controller.GreetingController.sayHello()
+2016-09-28 11:21:49.074  INFO 20292 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-28 11:21:49.074  INFO 20292 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-28 11:21:49.101  INFO 20292 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 11:21:49.101  INFO 20292 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 11:21:49.134  INFO 20292 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 11:21:49.328  INFO 20292 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-28 11:21:49.392  INFO 20292 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2016-09-28 11:21:49.444  INFO 20292 --- [main] o.l.proxy.impl.DefaultHttpProxyServer    : Starting proxy at address: /127.0.0.1:8080
+2016-09-28 11:21:49.476  INFO 20292 --- [main] o.l.proxy.impl.DefaultHttpProxyServer    : Proxy listening with TCP transport
+2016-09-28 11:21:49.543  INFO 20292 --- [main] o.l.proxy.impl.DefaultHttpProxyServer    : Proxy started at address: /127.0.0.1:8080
+2016-09-28 11:21:49.544  INFO 20292 --- [main] com.example.ProxySpringBootApplication   : Started ProxySpringBootApplication in 3.388 seconds (JVM running for 3.789)
+2016-09-28 11:21:52.954  INFO 20292 --- [LittleProxy-0-ClientToProxyWorker-0] c.e.SoapMessageFiltersSourceAdapter      : <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetGeoIP>
+         <!--Optional:-->
+         <web:IPAddress>1.1.1.1</web:IPAddress>
+      </web:GetGeoIP>
+   </soapenv:Body>
+</soapenv:Envelope>
+2016-09-28 11:21:53.403  INFO 20292 --- [LittleProxy-0-ProxyToServerWorker-0] c.e.SoapMessageFiltersSourceAdapter      : <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetGeoIPResponse xmlns="http://www.webservicex.net/"><GetGeoIPResult><ReturnCode>1</ReturnCode><IP>1.1.1.1</IP><ReturnCodeDetails>Success</ReturnCodeDetails><CountryName>Australia</CountryName><CountryCode>AUS</CountryCode></GetGeoIPResult></GetGeoIPResponse></soap:Body></soap:Envelope>
+2016-09-28 11:43:55.488  INFO 20512 --- [main] com.example.ProxySpringBootApplication   : Starting ProxySpringBootApplication on EPUADNIW0126 with PID 20512 (D:\TestProjects\proxy-spring-boot\target\classes started by Maksym_Radiuk in D:\TestProjects\proxy-spring-boot)
+2016-09-28 11:43:55.495  INFO 20512 --- [main] com.example.ProxySpringBootApplication   : No active profile set, falling back to default profiles: default
+2016-09-28 11:43:55.566  INFO 20512 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a192cfe: startup date [Wed Sep 28 11:43:55 MSK 2016]; root of context hierarchy
+2016-09-28 11:43:56.689  INFO 20512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b194b54c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-28 11:43:56.732  INFO 20512 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2016-09-28 11:43:57.148  INFO 20512 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2016-09-28 11:43:57.160  INFO 20512 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-28 11:43:57.162  INFO 20512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2016-09-28 11:43:57.293  INFO 20512 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-09-28 11:43:57.294  INFO 20512 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1730 ms
+2016-09-28 11:43:57.481  INFO 20512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-28 11:43:57.482  INFO 20512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2016-09-28 11:43:57.485  INFO 20512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-28 11:43:57.486  INFO 20512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-28 11:43:57.486  INFO 20512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-28 11:43:57.486  INFO 20512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-28 11:43:57.541  WARN 20512 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'proxySpringBootApplication': Unsatisfied dependency expressed through field 'proxyServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'proxyServer': Unsatisfied dependency expressed through field 'serverBootstrap'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean found for dependency [org.littleshoot.proxy.impl.DefaultHttpProxyServer]: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2016-09-28 11:43:57.543  INFO 20512 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2016-09-28 11:43:57.650  INFO 20512 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2016-09-28 11:43:57.816 ERROR 20512 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field serverBootstrap in com.example.ProxyServer required a bean of type 'org.littleshoot.proxy.impl.DefaultHttpProxyServer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.littleshoot.proxy.impl.DefaultHttpProxyServer' in your configuration.
+
+2016-09-28 12:10:15.332  INFO 21740 --- [main] com.example.ProxySpringBootApplication   : Starting ProxySpringBootApplication on EPUADNIW0126 with PID 21740 (D:\TestProjects\proxy-spring-boot\target\classes started by Maksym_Radiuk in D:\TestProjects\proxy-spring-boot)
+2016-09-28 12:10:15.334  INFO 21740 --- [main] com.example.ProxySpringBootApplication   : No active profile set, falling back to default profiles: default
+2016-09-28 12:10:15.425  INFO 21740 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20ce78ec: startup date [Wed Sep 28 12:10:15 MSK 2016]; root of context hierarchy
+2016-09-28 12:10:16.544  INFO 21740 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bfc52f5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-28 12:10:16.585  INFO 21740 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2016-09-28 12:10:17.018  INFO 21740 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2016-09-28 12:10:17.032  INFO 21740 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-28 12:10:17.033  INFO 21740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2016-09-28 12:10:17.151  INFO 21740 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-09-28 12:10:17.152  INFO 21740 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1734 ms
+2016-09-28 12:10:17.327  INFO 21740 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-28 12:10:17.329  INFO 21740 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2016-09-28 12:10:17.331  INFO 21740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-28 12:10:17.332  INFO 21740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-28 12:10:17.332  INFO 21740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-28 12:10:17.332  INFO 21740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-28 12:10:17.593  INFO 21740 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20ce78ec: startup date [Wed Sep 28 12:10:15 MSK 2016]; root of context hierarchy
+2016-09-28 12:10:17.649  INFO 21740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.example.controller.GreetingController.sayHello()
+2016-09-28 12:10:17.652  INFO 21740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-28 12:10:17.653  INFO 21740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-28 12:10:17.683  INFO 21740 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 12:10:17.684  INFO 21740 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 12:10:17.721  INFO 21740 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-28 12:10:17.948  INFO 21740 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-28 12:10:18.005  INFO 21740 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2016-09-28 12:10:18.062  INFO 21740 --- [main] o.l.proxy.impl.DefaultHttpProxyServer    : Starting proxy at address: /127.0.0.1:8080
+2016-09-28 12:10:18.093  INFO 21740 --- [main] o.l.proxy.impl.DefaultHttpProxyServer    : Proxy listening with TCP transport
+2016-09-28 12:10:18.152  INFO 21740 --- [main] o.l.proxy.impl.DefaultHttpProxyServer    : Proxy started at address: /127.0.0.1:8080
+2016-09-28 12:10:18.153  INFO 21740 --- [main] com.example.ProxySpringBootApplication   : Started ProxySpringBootApplication in 3.321 seconds (JVM running for 3.724)
+2016-09-28 12:10:21.433  INFO 21740 --- [LittleProxy-0-ClientToProxyWorker-0] c.e.SoapMessageFiltersSourceAdapter      : <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetGeoIP>
+         <!--Optional:-->
+         <web:IPAddress>1.1.1.1</web:IPAddress>
+      </web:GetGeoIP>
+   </soapenv:Body>
+</soapenv:Envelope>
+2016-09-28 12:10:21.870  INFO 21740 --- [LittleProxy-0-ProxyToServerWorker-0] c.e.SoapMessageFiltersSourceAdapter      : <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetGeoIPResponse xmlns="http://www.webservicex.net/"><GetGeoIPResult><ReturnCode>1</ReturnCode><IP>1.1.1.1</IP><ReturnCodeDetails>Success</ReturnCodeDetails><CountryName>Australia</CountryName><CountryCode>AUS</CountryCode></GetGeoIPResult></GetGeoIPResponse></soap:Body></soap:Envelope>
